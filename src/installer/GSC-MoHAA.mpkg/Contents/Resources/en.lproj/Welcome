@@ -1,0 +1,39 @@
+<html>
+<style type="text/css">
+
+p {
+  font-family: helvetica,arial,sans-serif;
+  font-size: 0.85em/1.5em;
+}
+
+b  {
+  font-family: helvetica,arial,sans-serif;
+  font-size: 0.85em/1.5em;  
+}
+
+a  {
+  font-family: helvetica,arial,sans-serif;
+  font-size: 0.85em/1.5em;  
+}
+
+li  {
+  font-family: helvetica,arial,sans-serif;
+  font-size: 0.85em/1.5em;  
+}
+</style>
+<body>
+
+<b>System Requirements</b>
+<p>To use GSC MoHAA successfully, you need each of the following:
+
+<ul>
+<li>a Macintosh computer with OSX 10.3.9 or higher.
+<li>a copy of Aspyr's Medal of Honor: Allied Assault, updated to the latest version.
+<li>an installation of the "mohaa_server" unix command line tool.
+<li>the Unix command line tool "unzip" must be in the folder "/usr/bin". On most OSX installations this is normally the case.
+</ul>
+<br>
+<p>GSC MoHAA can be used on basically any Macintosh, but do note that running a game server is basically as heavy as playing the game itself. In it's memory, the Mac has to build a virtual 3D world in which all of the players run around. Each player also causes about 3 to 5 kb/s of data traffic on your network. If your processor or network is not fast enough, you may have to limit the number of players that can log on to your server.
+
+</body>
+</html>

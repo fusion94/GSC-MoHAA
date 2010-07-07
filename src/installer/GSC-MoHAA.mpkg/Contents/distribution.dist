@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1.000000" authoringTool="com.apple.PackageMaker" authoringToolVersion="3.0.3" authoringToolBuild="174">
+    <title>GSC-MoHAA</title>
+    <options customize="allow" allow-external-scripts="no" rootVolumeOnly="false"/>
+    <volume-check script="pm_volume_check();"/>
+    <script>function pm_volume_check() {
+  if(!(system.files.fileExistsAtPath(my.target.mountpoint + '/Applications/Medal of Honor/mohaa_server') == true)) {
+    my.result.title = 'Failure';
+    my.result.message = 'Installation cannot proceed, as not all requirements were met.';
+    my.result.type = 'Fatal';
+    return false;
+  }
+  if(!(system.files.fileExistsAtPath(my.target.mountpoint + '/Applications/Medal of Honor/mohaab_server') == true)) {
+    my.result.title = 'Failure';
+    my.result.message = 'Installation cannot proceed, as not all requirements were met.';
+    my.result.type = 'Fatal';
+    return false;
+  }
+  if(!(system.files.fileExistsAtPath(my.target.mountpoint + '/Applications/Medal of Honor/mohaas_server') == true)) {
+    my.result.title = 'Failure';
+    my.result.message = 'Installation cannot proceed, as not all requirements were met.';
+    my.result.type = 'Fatal';
+    return false;
+  }
+  return true;
+}
+</script>
+    <welcome file="Welcome"/>
+    <readme file="ReadMe"/>
+    <conclusion file="Conclusion"/>
+    <choices-outline>
+        <line choice="choice19"/>
+    </choices-outline>
+    <choice id="choice19" title="GSC Mohaa">
+        <pkg-ref id="net.damagestudios.gscmohaa.gscmohaa.pkg"/>
+    </choice>
+    <pkg-ref id="net.damagestudios.gscmohaa.gscmohaa.pkg" installKBytes="816" version="2" auth="Root">file:./Contents/Packages/gscmohaa.pkg</pkg-ref>
+    <pkg-ref id="net.damagestudios.gscmohaa.gscmohaa.pkg">
+        <relocate search-id="pkmktoken2">
+            <bundle id="net.damagestudios.gscmohaa"/>
+        </relocate>
+    </pkg-ref>
+    <locator>
+        <search id="pkmktoken2-1" type="component">
+            <bundle CFBundleIdentifier="net.damagestudios.gscmohaa" path="/Applications/GSC Mohaa.app"/>
+        </search>
+        <search id="pkmktoken2-0" type="script" script="pkmktoken2_combined()">
+            <script>
+function pkmktoken2_combined() {
+	function pkmk_add_results_to_array(results, array) {
+		for(i = 0; i &lt; results.length; i++)
+			array.push(results[i]);
+	}
+	var result = new Array();
+	var search;
+	search = my.search.results['pkmktoken2-1'];
+	if(search) pkmk_add_results_to_array(search, result);
+	return result;
+}
+</script>
+        </search>
+        <search type="script" id="pkmktoken2" script="pkmktoken2_final()">
+            <script>
+function pkmktoken2_final() {
+	var combined = my.search.results['pkmktoken2-0'];
+	return combined;
+}
+</script>
+        </search>
+    </locator>
+</installer-script>

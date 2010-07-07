@@ -1,0 +1,36 @@
+<html>
+<style type="text/css">
+
+p {
+	font-family: helvetica,arial,sans-serif;
+	font-size: 0.85em/1.5em;
+}
+
+b  {
+	font-family: helvetica,arial,sans-serif;
+	font-size: 0.85em/1.5em;	
+}
+
+a  {
+	font-family: helvetica,arial,sans-serif;
+	font-size: 0.85em/1.5em;	
+}
+
+</style>
+<body>
+	
+<p>Please make a donation if you find our site useful and want to support the continued operation of Damage Studios Software! Your donations always make it back into the community as we promote Open Source.</p>
+
+<b>Why support the Open Source community?</b>
+<p>Software is not the only field affected by open source; many fields of study and social and political views have been affected by the growth of the concept of open source. Advocates in one field will often support the expansion of open source in other fields, including Linus Torvalds who is quoted as saying, "the future is open source everything." Often, open source is an expression where it simply means that a system is available to all who wish to work on it.</p>
+
+<b>Donate Using PayPal</b> 
+<p>If you have a major credit card (Visa, MasterCard, American Express) or a PayPal account, donating is easy. Just click the link below to donate:</p>
+
+<p><a href="http://damagestudios.net/donate">http://damagestudios.net/donate</a></p>
+
+<p>If you need any help please refer to the help documentation located at: <a href="http://damagestudios.net/help/gscmohaa">http://damagestudios.net/help/gscmohaa</a></p>
+
+<p>If you notice any bugs please report them to <a href="mailto:bugs@damagestudios.net?subject=GSC:MoHAA Bug">bugs@damagestudios.net</a></p>
+</body>
+</html>
